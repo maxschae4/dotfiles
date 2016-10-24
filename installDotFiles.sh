@@ -21,7 +21,9 @@ ln -siv ~/.dotfiles/bash/.inputrc ~
 # if bash_profile exists, .bashrc doesn't get loaded, and we can't have that.
 # ln -siv ~/.dotfiles/bash/.bash_profile ~
 cat <<EOF >> ~/.bash_profile
+
 source ~/.bashrc
+
 EOF
 
 # .bashrc - a shell script run when bash is executed.
@@ -38,10 +40,22 @@ EOF
 #   type a few lines, then when you're ready, on a new line type EOF and hit enter
 #   now cat blah.txt (or open it in your favorite editor)
 cat <<EOF >> ~/.bashrc
+
 for DOTFILE in `find ~/.dotfiles/bash/sources`
 do
 	[ -f "$DOTFILE" ] && source "$DOTFILE"
 done
+
 EOF
 
+# program installs:
+
+# tig - beautiful git trees and navigating diffs.
+sudo apt-get -y install git tig tmux 
+
+# .tmux.conf
+# clone the tmux plugin manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+# link to our tmux.conf
+ln -siv ~/.dotfiles/config/.tmux.conf ~
 
