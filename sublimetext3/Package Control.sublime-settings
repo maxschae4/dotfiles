@@ -1,0 +1,47 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Autoprefixer"
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AngularJS",
+		"Autoprefixer",
+		"AzureResourceManager",
+		"Base16 Color Schemes",
+		"Boxy Theme",
+		"Boxy Theme Addon - Font Face",
+		"BracketHighlighter",
+		"Case Conversion",
+		"Color Highlighter",
+		"DocBlockr",
+		"Emmet",
+		"GitGutter",
+		"GoSublime",
+		"JavaScriptNext - ES6 Syntax",
+		"JSHint",
+		"Monokai - Spacegray",
+		"Package Control",
+		"PackageDev",
+		"Preap",
+		"Predawn",
+		"ScopeHunter",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-jshint",
+		"Terminal",
+		"Theme - Brogrammer",
+		"Theme - Flatland",
+		"Theme - Nexus",
+		"Theme - Soda",
+		"Theme - Spacegray",
+		"Themr",
+		"Tomorrow Color Schemes",
+		"TrailingSpaces",
+		"TypeScript"
+	]
+}
