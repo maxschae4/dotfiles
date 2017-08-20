@@ -59,3 +59,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # link to our tmux.conf
 ln -siv ~/.dotfiles/config/.tmux.conf ~
 
+# i3 config
+ln -siv ~/.dotfiles/config/i3 ~/.config/
+ln -siv ~/.dotfiles/config/.Xresources ~
+ln -siv ~/.dotfiles/config/.vimrc ~
