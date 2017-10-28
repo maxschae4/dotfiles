@@ -8,6 +8,7 @@
 # - git
 # - tig			visual git
 # - tmux		terminal multiplexer
+# - ruby		ruby is required for tmuxinator
 # - ranger		visual directory navigation in the terminal
 # - rofi		application launcher/ephemeral terminal
 # - compton		window transitions and other visual niceties
@@ -15,8 +16,9 @@
 # - curl
 # - rxvt-unicode-color	extensible terminal emulator
 # - vim			gotta have vim
+# - zsh
 
-sudo apt install -y i3 i3blocks git tig tmux ranger rofi compton lxappearance curl rxvt-unicode-256color vim
+sudo apt install -y i3 i3blocks git tig tmux ruby ranger rofi compton lxappearance curl rxvt-unicode-256color vim zsh
 
 
 # Making links interactively and noisily
