@@ -20,6 +20,7 @@ zstyle ':prezto:load' pmodule \
 
 # Set the key mapping style to 'vi'
 zstyle ':prezto:module:editor' key-bindings 'vi'
+bindkey '^r' history-incremental-search-backward
 
 # set the pwd prompt to 'long' style
 zstyle ':prezto:module:prompt' pwd-length 'long'
