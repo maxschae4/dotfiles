@@ -81,3 +81,8 @@ stow --verbose=2 Xresources
 
 # vim config
 stow --verbose=2 vim
+
+# setup zsh+zprezto
+git submodule update --init --recursive
+stow --verbose=2 zsh
+

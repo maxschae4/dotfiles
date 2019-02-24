@@ -1,0 +1,34 @@
+# source the upstream file
+source "${ZDOTDIR:-$HOME}/.zprezto/runcoms/zpreztorc"
+
+# load the prezto modules, order matters, especially the last 3
+zstyle ':prezto:load' pmodule \
+  'environment' \
+  'terminal' \
+  'editor' \
+  'history' \
+  'directory' \
+  'spectrum' \
+  'utility' \
+  'completion' \
+  'fasd' \
+  'python' \
+  'git' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'prompt'
+
+# Set the key mapping style to 'vi'
+zstyle ':prezto:module:editor' key-bindings 'vi'
+
+# set the pwd prompt to 'long' style
+zstyle ':prezto:module:prompt' pwd-length 'long'
+
+# display return code
+zstyle ':prezto:module:prompt' show-return-val 'yes'
+
+# set python virtualenv on directory change
+zstyle ':prezto:module:python:virtualenv' auto-switch 'yes'
+
+# init virtualenv wrapper if pre-requisites met
+zstyle ':prezto:module:python:virtualenv' initialize 'yes'
