@@ -1,0 +1,7 @@
+# TIG Defaults
+set line-graphics = utf-8
+
+# Gruvbox overrides:
+color cursor			237	green	bold
+color title-focus		237	4	bold
+color title-blur		black	4

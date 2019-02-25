@@ -2,7 +2,7 @@
 
 #
 # INSTALLS:
-# 
+#
 # - i3			window manager
 # - i3blocks		status bar for i3
 # - git
@@ -51,15 +51,6 @@ sudo apt install -y \
 # if you already have some custom fonts installed here, you may want to reconsider this.
 stow --verbose=2 fonts
 
-# we're only going to do one thing in there, source ~/.bashrc
-# if bash_profile exists, .bashrc doesn't get loaded, and we can't have that.
-# ln -siv ~/.dotfiles/bash/.bash_profile ~
-cat <<EOF >> ~/.bash_profile
-
-source ~/.bashrc
-
-EOF
-
 # bash config
 rm -f ~/.bashrc
 rm -f ~/.bash_aliases
@@ -73,7 +64,6 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 stow --verbose=2 tmux
 
 # i3 config
-rm -r ~/.dotfiles/config/i3
 stow --verbose=2 i3
 
 # urxvt + rofi config
@@ -85,4 +75,10 @@ stow --verbose=2 vim
 # setup zsh+zprezto
 git submodule update --init --recursive
 stow --verbose=2 zsh
+
+# tig config
+stow --verbose=2 tig
+
+# themes
+stow --verbose=2 themes
 

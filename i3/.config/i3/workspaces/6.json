@@ -1,0 +1,73 @@
+// vim:ts=4:sw=4:et
+{
+    // splith split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": 1,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "current_border_width": 2,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 432,
+               "width": 664,
+               "x": 0,
+               "y": 0
+            },
+            "name": "urxvt",
+            "percent": 0.65,
+            "swallows": [
+               { "class": "^URxvt$" }
+            ],
+            "type": "con"
+        },
+        {
+            // splitv split container with 2 children
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "percent": 0.35,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 768,
+                       "width": 1366,
+                       "x": 2195,
+                       "y": 684
+                    },
+                    "name": "Chrome VNC",
+                    "percent": 0.5,
+                    "swallows": [
+                       { "class": "^Vncviewer$" }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "normal",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 768,
+                       "width": 1366,
+                       "x": 2195,
+                       "y": 684
+                    },
+                    "name": "Firefox VNC",
+                    "percent": 0.5,
+                    "swallows": [
+                       { "class": "^Vncviewer$" }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
