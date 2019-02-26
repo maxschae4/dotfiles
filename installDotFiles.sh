@@ -18,6 +18,7 @@
 # - vim			gotta have vim
 # - zsh
 # - stow		dotfiles manager
+# - xclip		clipboard manager we need for tmux
 
 sudo apt install -y \
 	i3 i3blocks \
@@ -31,7 +32,8 @@ sudo apt install -y \
 	rxvt-unicode-256color \
 	vim \
 	zsh \
-	stow
+	stow \
+	xclip
 
 # We'll use GNU Stow to manage the installation of our dotfiles
 # https://www.gnu.org/software/stow/
